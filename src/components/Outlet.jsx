@@ -109,7 +109,7 @@ function Outlook() {
             </Box>
     <Box sx={{padding:"0px",display:"grid",flexWrap:"wrap",gridTemplateColumns:{
         xs: "auto auto",
-        sm: "auto auto auto",
+        sm: "auto auto",
         md: "auto auto auto",
         lg: "auto auto auto auto auto ",
 

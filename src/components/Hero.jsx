@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import HomeHero from "../assets/IMAGE1.png";
+import HomeHero from "../assets/checknewlogo.png";
 
 function Hero() {
     return (
@@ -93,14 +93,14 @@ function Hero() {
                 sx={{
                     flexBasis: "55%",
                     height: "100%",
-                    padding: "12px 30px",
+                    padding: "0px 30px",
                     display: "flex",
                     justifyContent: { sm: "center", md: "end" },
                     alignItems: "center",
                     background: "white",
                 }}
             >
-                <img src={HomeHero} alt="" width={"90%"} height={"100%"} />
+                <img src={HomeHero} alt="" width={"100%"} height={"100%"} />
             </Box>
         </Box>
     );

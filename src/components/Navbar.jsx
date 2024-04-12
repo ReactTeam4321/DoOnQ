@@ -79,10 +79,12 @@ function Navbar() {
             >
                 <Box
                     sx={{
+                        //padding:"10px",
                         display: "flex",
                     }}
                 >
-                    <Box sx={{ background: "inherit" }}>
+                    <Box sx={{ background: "inherit",marginTop:"10px",
+                 }}>
                         <img src={DoOnQ} alt="logo" width={130} />
                     </Box>
                 </Box>
