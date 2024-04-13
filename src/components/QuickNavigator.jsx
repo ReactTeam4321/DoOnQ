@@ -20,7 +20,7 @@ function QuickNavigator() {
                 paddingLeft: { sm: '0.6rem', md: '4rem', lg: '8rem' },
                 justifyContent: 'space-between',
                 flexWrap: { xs: 'wrap', md: 'nowrap' },
-                padding: { xs: '1rem' },
+                padding: { xs: '0.5rem' },
             }}
         >
             <Box>
@@ -38,6 +38,7 @@ function QuickNavigator() {
             >
                     <Typography sx={{
                         fontSize:"15px",
+                        fontFamily:"DM Sans",
                         display:{
                             xs:"none",
                             md:"unset"
@@ -47,7 +48,7 @@ function QuickNavigator() {
                         },
      
           }}>
-          DOONQ SOFTWARE SOLUTIONS, DUBAI, UAE
+          Software Solutions Provider in Dubai, UAE
           </Typography>
                 <Box
                     sx={{
@@ -83,40 +84,45 @@ function QuickNavigator() {
             </Box>
             <Box
                 sx={{
+                    
                     display: 'flex',
                     gap: { sm: '0.5rem', lg: '1rem' },
                     cursor: 'pointer',
                     marginInlineStart: { xs: 'auto', md: '0' },
                 }}
             >
-                <FacebookIcon
+                <FacebookIcon 
                     sx={{
+                        color:'#1877F2',
                         ':hover': {
-                            color: 'blue',
+                            color: 'black',
                         },
                         fontSize: '21px',
                     }}
                 />
                 <InstagramIcon
                     sx={{
+                        color:"#d62976",
                         ':hover': {
-                            color: '#FF1493',
+                            color: 'black',
                         },
                         fontSize: '21px',
                     }}
                 />
                 <TwitterIcon
                     sx={{
+                        color:'#1877F2',
                         ':hover': {
-                            color: 'blue',
+                            color: 'black',
                         },
                         fontSize: '21px',
                     }}
                 />
                 <YouTubeIcon
                     sx={{
+                        color:"#FF0000",
                         ':hover': {
-                            color: 'red',
+                            color: 'black',
                         },
                         fontSize: '21px',
                     }}

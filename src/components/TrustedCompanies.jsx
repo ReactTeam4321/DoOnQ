@@ -84,7 +84,7 @@ function TrustedCompanies() {
                         fontFamily: "DM Sans ",
                     }}
                 >
-                    55,000+ ERP Softwares
+                    55,000+ Business Owners
                 </Typography>
             </Box>
             <Box

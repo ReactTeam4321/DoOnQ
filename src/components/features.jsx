@@ -11,8 +11,8 @@ export default function Features() {
         {
             id: 1,
             image: image1,
-            title: "A quick 3-click ERP billing software",
-            titleStart: "A quick 3-click ERP ",
+            title: "A ERP billing software",
+            titleStart: "A ERP ",
             titleEnd: "software",
             highlight: "billing",
             description:

@@ -5,8 +5,8 @@ import IconButton from "@mui/material/IconButton";
 import { useState } from "react";
 import billing from "../assets/billing.svg";
 import crm from "../assets/crm.svg";
-import DoOnQ from "../assets/LOGO1.png";
-import inventory from "../assets/inventory.svg";
+import DoOnQ from "../assets/LOGO2.png";
+import inventory from "../assets/inventorylogo.png";
 import onlineOrdering from "../assets/onlineOrdering.svg";
 import reporting from "../assets/reporting.svg";
 import POS_Dropdown from "./NavDropDowns/POS_Dropdown";
@@ -20,6 +20,8 @@ import Button from '@mui/material/Button';
 import SelectDropDownOption from "./options";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import QuickNavigator from "./QuickNavigator";
+import mobileapps from "../assets/mobile-app.png";
+import payroll from "../assets/payroll.png"
 
 function Navbar() {
     const [open, setOpen] = useState(false);
@@ -29,24 +31,30 @@ function Navbar() {
     };
 
     const posOptions = [
-        { title: "Point Of Sales", img: billing },
+        { title: "Point Of Sales", img: onlineOrdering },
         { title: "Inventory", img: inventory },
-        { title: "Financial Accounts", img: onlineOrdering },
+        { title: "Financial Accounts", img: billing },
         { title: "Dashboard", img: reporting },
-        { title: "Mobile Apps", img: crm },
+        { title: "CRM", img: crm },
+        { title: "HR Payroll",img: payroll},
+        { title: "Mobile Apps",img: mobileapps}
     ];
     const AddOnsOptions = [
         { title: "Marketplace", img: "" },
-        { title: "Payroll", img: "" },
         { title: "Marketting hub", img: "" },
+        { title: "Supply Chain Management", img: "" },
         { title: "Suppliers hub", img: "" },
         { title: "Integration", img: "" },
+        { title: "Customer Support", img: "" },
+        { title: "Security Services", img: "" },
+        { title: "Upgrades & Migrations", img: "" },
     ];
     const resourcesOptions = [
         { title: "Blogs", img: "" },
         { title: "Youtube", img: "" },
         { title: "Webinars", img: "" },
         { title: "About us", img: "" },
+        { title: "Contact us", img: "" },
         { title: "Careers", img: "" },
         { title: "Support", img: "" },
     ];
@@ -83,9 +91,9 @@ function Navbar() {
                         display: "flex",
                     }}
                 >
-                    <Box sx={{ background: "inherit",marginTop:"10px",
+                    <Box sx={{  objectFit:"cover", background: "inherit",marginTop:"10px",
                  }}>
-                        <img src={DoOnQ} alt="logo" width={130} />
+                        <img src={DoOnQ} alt="logo" width="150px" height="70px" />
                     </Box>
                 </Box>
 
@@ -119,6 +127,10 @@ function Navbar() {
                             name={"Outlet types"}
                         /> */}
                         <Pricing />
+                        <POS_Dropdown
+                                options={resourcesOptions}
+                                name={"Resources"}
+                            />
                     </Box>
 
                     <Box
@@ -128,12 +140,7 @@ function Navbar() {
                             gap: "2rem",
                         }}
                     >
-                        <Box sx={{ display: { xs: "none", md: "block" } }}>
-                            <POS_Dropdown
-                                options={resourcesOptions}
-                                name={"Resources"}
-                            />
-                        </Box>
+                        
 
                         <Box
                             sx={{

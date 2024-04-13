@@ -1,15 +1,32 @@
 import { Box, Typography } from "@mui/material";
-import HomeHero from "../assets/checknewlogo.png";
+import HomeHero from "../assets/New Project (3).png";
+import { useEffect, useState } from "react";
 
 function Hero() {
+    const[handleZindex,setHandleZindex]=useState(true)
+    useEffect(() => {
+        const handleScroll = () => {
+      if(  window.scrollY===0){
+        setHandleZindex(true)
+      }else{
+        setHandleZindex(false)
+      }
+         
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+      
+      }, []);
     return (
         <Box
+      
             sx={{
                 display: "flex",
                 flexDirection: { xs: "column", md: "row" },
                 background: "white",
                 height: { xs: "auto", lg: "85vh" },
-                
+                position:"relative",
                 width: "85%",
                 margin: "10px auto",
                 marginTop:"100px",
@@ -98,9 +115,13 @@ function Hero() {
                     justifyContent: { sm: "center", md: "end" },
                     alignItems: "center",
                     background: "white",
+                  
+                    
                 }}
             >
-                <img src={HomeHero} alt="" width={"100%"} height={"100%"} />
+                <img src={HomeHero} style={{
+                      zIndex:handleZindex?1000:1
+                }} alt="" width={"450px"} height={"450px"} />
             </Box>
         </Box>
     );
